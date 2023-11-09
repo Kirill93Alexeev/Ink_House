@@ -1,0 +1,48 @@
+.btn {
+  font-family: "Raleway", sans-serif;
+  height: 65px;
+  padding: 20px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: #598d66;
+  font-size: 20px;
+  border: 1px solid #598d66;
+  background-color: transparent;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: #f4f6f5;
+    background-color: #598d66;
+  }
+  &:focus {
+    color: #598d66;
+    background: #d4e8d9;
+  }
+  &:active {
+    color: #fff;
+    background-color: #376b44;
+    border: 1px solid #598d66;
+  }
+  &_orange {
+    color: #2c2d35;
+    background-color: #eedb6d;
+    border: none;
+    &:hover {
+      color: #2c2d35;
+      background-color: #faeb97;
+    }
+    &:focus {
+      color: #2c2d35;
+      border: 1px solid #a38314;
+      background: #faeb97;
+    }
+    &:active {
+      color: #2c2d35;
+      background-color: #d9b949;
+    }
+  }
+  &_full-width {
+    width: 100%;
+  }
+}
