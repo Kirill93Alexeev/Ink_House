@@ -1,15 +1,14 @@
 .btn {
+  display: flex;
   font-family: "Raleway", sans-serif;
-  height: 65px;
-  padding: 20px 60px;
   justify-content: center;
   align-items: center;
-  gap: 6px;
   color: #598d66;
   font-size: 20px;
   border: 1px solid #598d66;
   background-color: transparent;
   transition: 0.3s;
+  padding: 20px 0px;
   &:hover {
     cursor: pointer;
     color: #f4f6f5;
@@ -28,6 +27,7 @@
     color: #2c2d35;
     background-color: #eedb6d;
     border: none;
+    width: 257px;
     &:hover {
       color: #2c2d35;
       background-color: #faeb97;

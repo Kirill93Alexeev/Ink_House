@@ -3,744 +3,242 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diary</title>
-    <link
-      rel="shortcut icon"
-      href="./image/favicon-16x16.png"
-      type="image/x-icon"
-    />
+    <title>Ink_House</title>
+    <link rel="shortcut icon" href="./image/Star 1.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="main-header" id="up">
+    <header class="main-header">
       <div class="container">
         <div class="main-header__wrap">
-          <img src="./image/Logo.png" alt="" class="main-header__logo" />
-          <button class="main-header__btn btn">Написать</button>
+          <a href="" class="main-header__logo logo link">
+            <img
+              class="logo__img"
+              src="./image/Star 1.svg"
+              alt=""
+              class="logo__img"
+            />
+            <p class="logo__text">Ink. House</p>
+          </a>
+          <hr class="header-line">
+          <nav class="main-header__nav-header nav-header">
+            <a href="" class="nav-header__link link">Репродукции</a>
+            <a href="" class="nav-header__link link">Новинки</a>
+            <a href="" class="nav-header__link about link">О нас</a>
+            <a href="" class="nav-header__link link"
+              ><img src="./image/shopping-cart.svg" alt="" class="nav__img"
+            /></a>
+          </nav>
         </div>
       </div>
     </header>
-    <main>
-      <section class="diary">
-        <div class="container">
-          <div class="diary__top">
-            <h1 class="diary__title">Мой дневничок</h1>
-            <div class="diary__button-wrap">
-              <button class="diary__btn btn">
-                <svg
-                  class="btn-new"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M4 6H20M4 12H14M4 18H8"
-                    stroke="#050F28"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M14 16L18 20M18 20L22 16M18 20L18 4"
-                    stroke="#88A1DE"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                Сначала новые
-              </button>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrap">
+          <img src="./image/Layer 0 1.png" alt="" class="hero__img" />
+          <div class="hero__info info">
+            <h1 class="info__title">
+              Реплики картин от <span class="info__span">Ink. House</span>
+            </h1>
+            <p class="info__text">
+              Высокое качество отрисовки на плотной бумаге или льняном холсте.
+              Редкие произведения, доступные цены.
+            </p>
+            <a href="" class="info__link btn link link-btn">Продукция</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reproduction">
+      <div class="container">
+        <div class="reproduction__top-wrap">
+          <h2 class="reproduction__title section-title">Репродукции</h2>
+          <div class="reproduction__filter filter">
+            <button class="filter__btn">Франция</button>
+            <button class="filter__btn">Германия</button>
+            <button class="filter__btn">Англия</button>
+          </div>
+        </div>
+        <div class="reproduction__main-wrap catalog">
+          <div class="card">
+            <img src="./image/охота амура.jpg" alt="" class="card__img" />
+            <p class="card__author">Марсель Руссо</p>
+            <h3 class="card__name">Охота Амура</h3>
+            <p class="card__material">Холст, масло (50х80)</p>
+            <p class="card__cost">14 500 руб</p>
+            <button class="btn btn_full-width">В корзину</button>
+          </div>
+          <div class="card">
+            <img src="./image/дама с собачкой.jpg" alt="" class="card__img" />
+            <p class="card__author">Анри Селин</p>
+            <h3 class="card__name">Дама с собачкой</h3>
+            <p class="card__material">Акрил, бумага (50х80)</p>
+            <p class="card__cost">16 500 руб</p>
+            <button class="btn btn_full-width">В корзину</button>
+          </div>
+          <div class="card">
+            <img src="./image/процедура.jpg" alt="" class="card__img" />
+            <p class="card__author">Франсуа Дюпон</p>
+            <h3 class="card__name">Процедура</h3>
+            <p class="card__material">Цветная литография (40х60)</p>
+            <p class="card__cost">20 000 руб</p>
+            <button class="btn btn_full-width">В корзину</button>
+          </div>
+          <div class="card">
+            <img src="./image/роза.jpg" alt="" class="card__img" />
+            <p class="card__author">Луи Детуш</p>
+            <h3 class="card__name">Роза</h3>
+            <p class="card__material">Бумага, акрил (50х80)</p>
+            <p class="card__cost">12 000 руб</p>
+            <button class="btn btn_full-width">В корзину</button>
+          </div>
+          <div class="card">
+            <img src="./image/птичья трапеза.jpg" alt="" class="card__img" />
+            <p class="card__author">Франсуа Дюпон</p>
+            <h3 class="card__name">Птичья трапеза</h3>
+            <p class="card__material">Цветная литография (40х60)</p>
+            <p class="card__cost">22 500 руб</p>
+            <button class="btn btn_full-width">В корзину</button>
+          </div>
+          <div class="card">
+            <img src="./image/пейзаж с рыбой.jpg" alt="" class="card__img" />
+            <p class="card__author">Пьер Моранж</p>
+            <h3 class="card__name">Пейзаж с рыбой</h3>
+            <p class="card__material">Цветная литография (40х60)</p>
+            <p class="card__cost">20 000 руб</p>
+            <button class="btn btn_full-width">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <button class="diary__btn btn">
-                <svg
-                  class="btn-old"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M4 6H20M4 12H14M4 18H8"
-                    stroke="#050F28"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M14 8L18 4M18 4L22 8M18 4L18 20"
-                    stroke="#88A1DE"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                Сначала старые
-              </button>
-            </div>
+    <section class="new-col">
+      <div class="container">
+        <div class="new-col__wrap">
+          <div class="new-col__title-wrap">
+            <img src="./image/Star 2.png" alt="" class="new-col__img" />
+            <h2 class="new-col__title section-title">
+              Новая коллекция французских авторов
+            </h2>
           </div>
-          <div class="diary-main">
-            <div class="records">
-              <div class="record">
-                <h2 class="record__title">Чертовски важная заметка</h2>
-                <p class="record__text">
-                  С другой стороны рамки и место обучения кадров позволяет
-                  оценить значение дальнейших направлений развития. Не следует,
-                  однако забывать, что сложившаяся структура организации
-                  позволяет выполнять важные задания по разработке позиций,
-                  занимаемых участниками в отношении поставленных задач.
-                </p>
-                <div class="record__datetime-wrap">
-                  <div class="date-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        opacity="0.16"
-                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
-                        fill="#88A1DE"
-                      />
-                      <path
-                        d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4 8H20"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M8 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">22.10.2023</p>
-                  </div>
-                  <div class="time-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <circle
-                        opacity="0.16"
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        fill="#88A1DE"
-                      />
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11 8V13H16"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">10:00</p>
-                  </div>
-                </div>
-              </div>
-              <div class="record">
-                <h2 class="record__title">
-                  Что-то не такое важное, но тоже интересное
-                </h2>
-                <p class="record__text">
-                  Идейные соображения высшего порядка, а также сложившаяся
-                  структура организации требуют определения и уточнения модели
-                  развития. Значимость этих проблем настолько очевидна, что
-                  сложившаяся структура организации представляет собой
-                  интересный эксперимент проверки существенных финансовых и
-                  административных условий.
-                </p>
-                <div class="record__datetime-wrap">
-                  <div class="date-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        opacity="0.16"
-                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
-                        fill="#88A1DE"
-                      />
-                      <path
-                        d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4 8H20"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M8 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">22.10.2023</p>
-                  </div>
-                  <div class="time-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <circle
-                        opacity="0.16"
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        fill="#88A1DE"
-                      />
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11 8V13H16"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">10:00</p>
-                  </div>
-                </div>
-              </div>
-              <div class="record">
-                <h2 class="record__title">Секретный рецепт сырников</h2>
-                <p class="record__text">
-                  Таким образом новая модель организационной деятельности
-                  позволяет выполнять важные задания по разработке систем
-                  массового участия. Равным образом укрепление и развитие
-                  структуры требуют от нас анализа направлений прогрессивного
-                  развития.
-                </p>
-                <div class="record__datetime-wrap">
-                  <div class="date-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        opacity="0.16"
-                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
-                        fill="#88A1DE"
-                      />
-                      <path
-                        d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4 8H20"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M8 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">20.10.2023</p>
-                  </div>
-                  <div class="time-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <circle
-                        opacity="0.16"
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        fill="#88A1DE"
-                      />
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11 8V13H16"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">17:00</p>
-                  </div>
-                </div>
-              </div>
-              <div class="record">
-                <h2 class="record__title">Мысли насущные после получения ЗП</h2>
-                <p class="record__text">
-                  Идейные соображения высшего порядка, а также постоянный
-                  количественный рост и сфера нашей активности позволяет
-                  выполнять важные задания по разработке соответствующий условий
-                  активизации. Дальнейшее развитие различных форм деятельности
-                  требуют от нас анализа условий активизации.
-                </p>
-                <div class="record__datetime-wrap">
-                  <div class="date-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        opacity="0.16"
-                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
-                        fill="#88A1DE"
-                      />
-                      <path
-                        d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4 8H20"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M8 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">20.10.2023</p>
-                  </div>
-                  <div class="time-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <circle
-                        opacity="0.16"
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        fill="#88A1DE"
-                      />
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11 8V13H16"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">10:00</p>
-                  </div>
-                </div>
-              </div>
-              <div class="record">
-                <h2 class="record__title">Секретный план захвата мира</h2>
-                <p class="record__text">
-                  Разнообразный и богатый опыт постоянный количественный рост и
-                  сфера нашей активности требуют от нас анализа дальнейших
-                  направлений развития. Значимость этих проблем настолько
-                  очевидна, что консультация с широким активом обеспечивает
-                  широкому кругу (специалистов) участие в формировании систем
-                  массового участия.
-                </p>
-                <div class="record__datetime-wrap">
-                  <div class="date-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        opacity="0.16"
-                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
-                        fill="#88A1DE"
-                      />
-                      <path
-                        d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4 8H20"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M8 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">17.10.2023</p>
-                  </div>
-                  <div class="time-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <circle
-                        opacity="0.16"
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        fill="#88A1DE"
-                      />
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11 8V13H16"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">15:00</p>
-                  </div>
-                </div>
-              </div>
-              <div class="record">
-                <h2 class="record__title">
-                  Список покупок на следующую неделю
-                </h2>
-                <p class="record__text">
-                  Таким образом реализация намеченных плановых заданий в
-                  значительной степени обуславливает создание новых предложений.
-                  Задача организации, в особенности же рамки и место обучения
-                  кадров представляет собой интересный эксперимент проверки
-                  дальнейших направлений развития.
-                </p>
-                <div class="record__datetime-wrap">
-                  <div class="date-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        opacity="0.16"
-                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
-                        fill="#88A1DE"
-                      />
-                      <path
-                        d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4 8H20"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M8 3V5"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">16.10.2023</p>
-                  </div>
-                  <div class="time-wrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <circle
-                        opacity="0.16"
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        fill="#88A1DE"
-                      />
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="9"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11 8V13H16"
-                        stroke="#88A1DE"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p class="datetime">10:10</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="new-col__info info">
+            <p class="info__paragraph">
+              Сложно сказать, почему акционеры крупнейших компаний призывают нас
+              к новым свершениям, которые, в свою очередь, должны быть
+              заблокированы в рамках своих собственных рациональных ограничений.
+            </p>
+            <p class="info__paragraph">
+              Принимая во внимание показатели успешности, граница обучения
+              кадров предопределяет высокую востребованность направлений
+              прогрессивного развития.
+            </p>
           </div>
-          <div class="diary__bottom">
-            <button class="diary__bottom-btn btn">Показать больше</button>
-            <div class="diary__number-pages-wrap number-pages">
-              <button class="number-pages__previous-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="34"
-                  height="34"
-                  viewBox="0 0 34 34"
-                  fill="none"
-                >
-                  <circle
-                    opacity="0.16"
-                    cx="17"
-                    cy="17"
-                    r="12.75"
-                    fill="#88A1DE"
-                  />
-                  <circle
-                    cx="17"
-                    cy="17"
-                    r="12.75"
-                    stroke="#88A1DE"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M17 12.75L12.75 17M12.75 17L17 21.25M12.75 17H21.25"
-                    stroke="#88A1DE"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="number-pages__numbers">
-                <a href="" class="number-pages__number">1</a>
-                <a href="" class="number-pages__number">2</a>
-                <a href="" class="number-pages__number">3</a>
-                <a href="" class="number-pages__number">4</a>
-                <a href="" class="number-pages__number">5</a>
-              </div>
-              <button class="number-pages__next-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="34"
-                  height="34"
-                  viewBox="0 0 34 34"
-                  fill="none"
-                >
-                  <circle
-                    opacity="0.16"
-                    cx="17"
-                    cy="17"
-                    r="12.75"
-                    fill="#88A1DE"
-                  />
-                  <circle
-                    cx="17"
-                    cy="17"
-                    r="12.75"
-                    stroke="#88A1DE"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M17 21.25L21.25 17M21.25 17L17 12.75M21.25 17H12.75"
-                    stroke="#88A1DE"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
+
+          <a href="" class="btn btn_orange link link-btn new-col__btn">Ознакомиться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ourteam">
+      <div class="container">
+        <div class="ourteam__wrap">
+          <img src="./image/Group 210.png" alt="" class="ourteam__img" />
+          <div class="ourteam__wrap-text">
+            <h2 class="ourteam__title section-title">Наша команда</h2>
+            <p class="ourteam__info">
+              Значимость этих проблем настолько очевидна, что базовый вектор
+              развития позволяет оценить значение экспериментов, поражающих по
+              своей масштабности и грандиозности. Мы вынуждены отталкиваться от
+              того, что консультация с широким активом.
+            </p>
+            <div class="ourteam__wrap-avatars">
+              <img
+                src="./image/Ellipse 30.png"
+                alt="avatar-one"
+                class="ourteam__avatar"
+              />
+              <img
+                src="./image/Ellipse 31.png"
+                alt="avatar-two"
+                class="ourteam__avatar"
+              />
+              <img
+                src="./image/Ellipse 32.png"
+                alt="avatar-three"
+                class="ourteam__avatar"
+              />
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
+      </div>
+    </section>
+
+    <footer class="main-footer">
       <div class="container">
-        <div class="footer__wrap">
-          <p class="footer__text">Мой Дневничок</p>
-          <a href="#up" class="footer__btn">
-            <svg
-              class="footer__svg"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M19 12L12 5L5 12M12 5L12 19"
-                stroke="#050F28"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+        <div class="main-footer__wrap">
+          <div class="main-footer__wrap-left">
+            <a href="" class="main-footer__logo logo link">
+              <img
+                class="logo__img"
+                src="./image/Star 1.svg"
+                alt=""
+                class="logo__img"
               />
-            </svg>
-            Наверх
-          </a>
+              <p class="main-footer__logo logo__text">Ink. House</p>
+            </a>
+
+            <div class="main-footer__phone phone">
+              <a class="phone__number link" href="tel:+79995435454"
+                >+7 (999) 543-54-54</a
+              >
+              <p class="phone__desc">Мастерская</p>
+            </div>
+          </div>
+          <div class="main-footer__footer-nav footer-nav">
+            <div class="footer-nav__item">
+              <a href="" class="footer-nav__title link">Репродукции</a>
+              <a href="" class="footer-nav__text link">Франция</a>
+              <a href="" class="footer-nav__text link">Германия</a>
+              <a href="" class="footer-nav__text link">Англия</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="" class="footer-nav__title link">Новинки</a>
+              <a href="" class="footer-nav__text link">2021</a>
+              <a href="" class="footer-nav__text link">2020</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="" class="footer-nav__title link">О нас</a>
+              <a href="" class="footer-nav__text link">Художники</a>
+              <a href="" class="footer-nav__text link">Менеджеры</a>
+            </div>
+          </div>
+          <hr>
+          <div class="main-footer__social social">
+            <div class="social__icons">
+              <a href=""
+                ><img src="./image/Frame.svg" alt="" class="social__icon"
+              /></a>
+              <a href=""
+                ><img src="./image/Frame (1).svg" alt="" class="social__icon"
+              /></a>
+              <a href=""
+                ><img src="./image/Frame (2).svg" alt="" class="social__icon"
+              /></a>
+            </div>
+            <div class="social__info">
+              <p class="social__text">Ink. House ®</p>
+             <p class="social__text">All rights reserved</p>
+            </div>
+            
+          </div>
         </div>
       </div>
     </footer>
